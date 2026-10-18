@@ -89,14 +89,30 @@ namespace linq.Assignment
             #endregion
             #region question9
 
-//            9.Get all products from the "Beverages" category, sorted by
-//UnitsInStock descending. Print name and stock.
+            //            9.Get all products from the "Beverages" category, sorted by
+            //UnitsInStock descending. Print name and stock.
 
             //var resualt9=Source.ProductList.Where(p=>p.Category== "Beverages")
             //                               .OrderByDescending(p=>p.UnitsInStock)
             //                               .Select(p => new {p.ProductName, p.UnitsInStock });
 
             //foreach (var item in resualt9)
+            //    Console.WriteLine(item);
+            #endregion
+            #region question10
+            //            10.Using QUERY SYNTAX with a compound from clause, list
+            //all orders placed in 1997 or later showing CustomerID and
+            //OrderDate.
+
+            //var resualt10 = from c in Source.CustomerList
+            //                from o in c.Orders
+            //                where o.OrderDate.Year >= 1997
+            //                select new { c.CustomerID, o.OrderDate };
+
+            ////var resualt10 = Source.CustomerList.SelectMany(c => c.Orders)
+            ////                      .Where(c => c.OrderDate.Year >= 1997);
+
+            //foreach (var item in resualt10)
             //    Console.WriteLine(item);
             #endregion
 
