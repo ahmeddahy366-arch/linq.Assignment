@@ -1,5 +1,6 @@
 ﻿using LINQ.DataSources;
 using LINQ.Models;
+using System.Drawing;
 
 namespace linq.Assignment
 {
@@ -24,6 +25,16 @@ namespace linq.Assignment
             var rasualt2 = Source.ProductList.Select(p => p.ProductName);
             foreach(var item in rasualt2)
                 Console.WriteLine(item);
+            #endregion
+            #region question3
+//            3.Sort all products by UnitPrice(ascending). Print each
+//product's name and price.
+var resualt3 = Source.ProductList.OrderBy(p => p.UnitPrice)
+                                .Select(p => new{ p.ProductName, p.UnitPrice });
+            foreach(var item in resualt3)
+                Console.WriteLine(item);    
+
+
             #endregion
 
 
