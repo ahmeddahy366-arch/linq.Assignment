@@ -1,6 +1,7 @@
 ﻿using LINQ.DataSources;
 using LINQ.Models;
 using System.Drawing;
+using System.Xml.Linq;
 
 namespace linq.Assignment
 {
@@ -54,6 +55,21 @@ namespace linq.Assignment
             //foreach(var item in resualt5)
             //    Console.WriteLine(item);
             #endregion
+            #region question6
+
+//            6.Create a new anonymous type with three properties:
+//● Name → the product name
+//● Price → the unit price
+//● StockStatus → a string: "Available" if UnitsInStock > 0,
+//otherwise "Out of Stock"
+//● Print the result.
+
+           //var resualt6= Source.ProductList.Select(p => new {name=p.ProductName,price=p.UnitPrice, StockStatus =p.UnitsInStock>0?"Available":"Out of Stock"});
+           // foreach (var item in resualt6)
+           //     Console.WriteLine(item);
+            #endregion
+
+
 
 
 
