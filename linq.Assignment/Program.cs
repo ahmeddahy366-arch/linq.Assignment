@@ -15,8 +15,22 @@ namespace linq.Assignment
                                            .Select(p => new { p.ProductName, p.UnitPrice });
             foreach(var item in rasualt)
                 Console.WriteLine(item);
-                      
+
             #endregion
+            #region question2
+            //            2.Get a list of only the product names from ProductList.Print
+            //each name.
+
+            var rasualt2 = Source.ProductList.Select(p => p.ProductName);
+            foreach(var item in rasualt2)
+                Console.WriteLine(item);
+            #endregion
+
+
+
+
+
+
         }
     }
 }
