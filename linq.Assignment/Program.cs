@@ -124,13 +124,27 @@ namespace linq.Assignment
                 Console.WriteLine( item);
 
             #endregion
+            #region question12
+            //            12.Sort first by-word length and then by a
+            //case -insensitive sort of the words in an array.
+
+            //String[] Arr = { "aPPLE", "AbAcUs", "bRaNcH", "BlUeBeRrY", "ClOvEr", "cHeRry" };
+            //String[] Arr = { "aPPLE", "AbAcUs", "bRaNcH", "BlUeBeRrY", "ClOvEr", "cHeRry" };
+
+            //var reusalt12=Arr.OrderBy(w=>w.Length).ThenBy(w=>w, StringComparer.OrdinalIgnoreCase);
+            //foreach (var item in reusalt12)
+            //{
+            //    Console.WriteLine(item);
+
+            //}
+
+            #endregion
 
 
 
 
 
 
-
-        }
+            }
     }
 }
