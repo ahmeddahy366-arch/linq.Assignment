@@ -32,10 +32,20 @@ namespace linq.Assignment
 var resualt3 = Source.ProductList.OrderBy(p => p.UnitPrice)
                                 .Select(p => new{ p.ProductName, p.UnitPrice });
             foreach(var item in resualt3)
-                Console.WriteLine(item);    
+                Console.WriteLine(item);
 
 
             #endregion
+
+            #region question4
+            //4.Get all products where UnitPrice is between 10 and 30
+
+            var resualt4=Source.ProductList.Where(p=>p.UnitPrice>10 && p.UnitPrice<30);
+            foreach(var item in resualt4)
+                Console.WriteLine(item);
+            #endregion
+
+
 
 
 
