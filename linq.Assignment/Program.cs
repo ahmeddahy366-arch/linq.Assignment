@@ -139,12 +139,19 @@ namespace linq.Assignment
             //}
 
             #endregion
-
-
-
-
-
-
+            #region question13
+            string[] Arr = { "zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine" };  
+            var resualt13 = Arr.Where(w => w[1]=='i').Reverse();
+            foreach (var item in resualt13)
+            {
+                Console.WriteLine(item);
             }
+            #endregion
+
+
+
+
+
+        }
     }
 }
