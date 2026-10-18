@@ -116,6 +116,15 @@ namespace linq.Assignment
             //    Console.WriteLine(item);
             #endregion
 
+            #region question11
+            //11.Show position number alongside ProductName
+
+            var resualt11 = Source.ProductList.Select((p, i) => $"{i + 1}{p.ProductName}");
+            foreach (var item in resualt11)
+                Console.WriteLine( item);
+
+            #endregion
+
 
 
 
